@@ -1,6 +1,5 @@
 //
 //  main.cpp
-//  C++ Tesy
 //
 //  Created by Ｍac on 2020/4/8.
 //  Copyright © 2020 Ｍac. All rights reserved.
@@ -46,4 +45,4 @@ int main() {
     return 0;
 }
 
-//second edition
+//third edition
