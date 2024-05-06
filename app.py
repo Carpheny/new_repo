@@ -18,6 +18,7 @@ from linebot.v3.webhooks import (
     TextMessageContent
 )
 
+from linebot.models import ImageSendMessage
 from linebot.models import AudioSendMessage
 
 
@@ -52,10 +53,9 @@ def handle_message(event):
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
         
-        response = parrot(event)
         if "語音" in event.message.text:
             audio_message = AudioSendMessage(
-            original_content_url='https://github.com/Carpheny/new_repo/blob/7803612721cdc8711b9a4bdb57dc96d4f736f2bd/dad.mp3',
+            original_content_url='https://github.com/Carpheny/new_repo/blob/master/dad.m4a ',
             duration=6000
             )
             response="我送給你的話：\n"
